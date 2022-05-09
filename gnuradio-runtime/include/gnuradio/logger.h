@@ -33,6 +33,7 @@ using logger_ptr = std::shared_ptr<void>;
 // keeps as short as possible; if anything is needed only by the implementation in
 // buffer.cc, then only include it there
 #include <gnuradio/api.h>
+#define FMT_DEPRECATED_OSTREAM // fix compatability with fmtlib master
 #include <spdlog/common.h>
 #include <spdlog/fmt/fmt.h>
 #include <spdlog/fmt/ostr.h>
